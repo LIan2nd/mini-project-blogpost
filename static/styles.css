@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --text-color-dark: #000;
+  --text-color-light: #fff;
+  --primary-color: #563A9C;
+  --secondary-color: #8B5DFF;
+  --bg-color: #FFF7D1;
+  --btn-color: #6A42C2;
+  --btn-color-secondary: #B6A28E;
+  --btn-color-secondary-hover: #807163;
+  --font-sans-serif: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --transition: all ease-in-out .2s;
+  --border-radius: 7px;
+}
+
+.my-btn {
+  padding: .4rem 1rem;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--btn-color);
+  color: var(--text-color-light);
+}
+
+.btn-secondary {
+  background-color: var(--btn-color-secondary);
+  color: var(--text-color-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-color-secondary-hover);
+}
+
+.post-body {
+  font-family: var(--font-serif);
+}
+
+footer strong {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: var(--font-sans-serif);
+  background-color: var(--bg-color);
+}
+
+main {
+  background-color: var(--text-color-light);
+  border-radius: var(--border-radius);
+}
+
+header {
+  padding: 1rem 0;
+}
+
+header nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav.navbar h1 {
+  color: var(--primary-color);
+}
+
+header nav.navbar ul li {
+  font-size: 1.4rem;
+}
+
+header nav.navbar ul li a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+header nav.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+header nav.navbar ul li a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.desc {
+  font-family: var(--font-serif);
+}
+
+@media(max-width: 576px) {
+  header nav.navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+}
