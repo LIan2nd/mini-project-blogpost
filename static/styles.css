@@ -8,11 +8,13 @@
   --bg-color: #FFF7D1;
   --btn-color: #6A42C2;
   --btn-color-secondary: #B6A28E;
-  --btn-color-secondary-hover: #807163;
+  --btn-color-secondary-hover: #a3907e;
   --font-sans-serif: "Poppins", sans-serif;
   --font-serif: "Playfair Display", serif;
   --transition: all ease-in-out .2s;
   --border-radius: 7px;
+  --btn-color-danger: #CC2B52;
+  --btn-color-danger-hover: #AF1740;
 }
 
 .my-btn {
@@ -39,6 +41,15 @@
 
 .btn-secondary:hover {
   background-color: var(--btn-color-secondary-hover);
+}
+
+.btn-danger {
+  background-color: var(--btn-color-danger);
+  color: var(--text-color-light);
+}
+
+.btn-danger:hover {
+  background-color: var(--btn-color-danger-hover);
 }
 
 .post-body {
